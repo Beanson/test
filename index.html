@@ -1,27 +1,19 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <title>判断是否是微信内置浏览器</title>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
-<h1>如果用微信浏览器打开可以看到下面的文字</h1>
-<p></p>
-</body>
-</html>
-<script type="text/javascript">
-    window.onload = function(){
-        if(isWeiXin()){
-            var p = document.getElementsByTagName('p');
-            p[0].innerHTML = window.navigator.userAgent;
-        }
-    };
-    function isWeiXin(){
-        var ua = window.navigator.userAgent.toLowerCase();
-        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
-            return true;
-        }else{
-            return false;
-        }
-    }
+<div>hello world</div>
+<h1 id="browser"></h1>
+
+<script>
+    $(document).ready(function(){
+        $("#browser").html(navigator.userAgent)
+    });
 </script>
+</body>
+
+</html>
