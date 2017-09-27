@@ -2,9 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Title</title>
 </head>
 <body>
-hello world
+<div>hello world</div>
+<h1 id="browser"></h1>
+<h1 id="browserMatching"></h1>
+
+<script>
+    document.getElementById("browser").innerHTML= window.navigator.userAgent;
+
+    function browserInfoMatching(){
+        var browserInfo = window.navigator.userAgent.toLowerCase();
+        if(browserInfo.includes("android")){
+            if(browserInfo.includes("micromessenger")){
+                document.getElementById("browserMatching").innerHTML="android wechat browser";
+            }else{
+                document.getElementById("browserMatching").innerHTML="android outside browser";
+            }
+        }
+        if(browserInfo.includes("ios")){
+            document.getElementById("browserMatching").innerHTML="android outside ios browser";
+        }
+    }
+    browserInfoMatching();
+
+</script>
 </body>
+
 </html>
