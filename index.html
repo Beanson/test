@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 <div>hello world</div>
 <h1 id="browser"></h1>
 
 <script>
-    $(document).ready(function(){
-        $("#browser").html(navigator.userAgent)
-    });
+    document.getElementById("browser").innerHTML= window.navigator.userAgent;
 </script>
 </body>
 
