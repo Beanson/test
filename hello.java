@@ -16,7 +16,7 @@ import org.openqa.selenium.By;
 
 class hello{
 
-    private static String a="this is a test for different line";
+    private static String a="this yes it is a test for different line";
 
     public static void main(String[] args) {
 
