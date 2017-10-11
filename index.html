@@ -7,8 +7,12 @@
 <body>
 <div>hello world</div>
 <h1 id="browser"></h1>
+    <button id=phone onclick="callAt()">click me to phone</button>
 <span style="text-decoration: underline">021 38885340</span>
 <script>
+    var callAt=function(){
+        window.location.href="tel:18316433415";
+    }
     document.getElementById("browser").innerHTML= window.navigator.userAgent;
 </script>
 </body>
