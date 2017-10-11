@@ -10,7 +10,7 @@
 <h1 id="browserMatching"></h1>
 
 <script>
-    document.getElementById("browser").innerHTML= window.navigator.userAgent;
+    //document.getElementById("browser").innerHTML= window.navigator.userAgent;
 
     function browserInfoMatching(){
         var browserInfo = window.navigator.userAgent.toLowerCase();
@@ -25,7 +25,8 @@
             document.getElementById("browserMatching").innerHTML="android outside ios browser";
         }
     }
-    browserInfoMatching();
+    //browserInfoMatching();
+    location.href="./index.html";
 
 </script>
 </body>
