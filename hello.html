@@ -10,23 +10,7 @@
 <h1 id="browserMatching"></h1>
 
 <script>
-    //document.getElementById("browser").innerHTML= window.navigator.userAgent;
-
-    function browserInfoMatching(){
-        var browserInfo = window.navigator.userAgent.toLowerCase();
-        if(browserInfo.includes("android")){
-            if(browserInfo.includes("micromessenger")){
-                document.getElementById("browserMatching").innerHTML="android wechat browser";
-            }else{
-                document.getElementById("browserMatching").innerHTML="android outside browser";
-            }
-        }
-        if(browserInfo.includes("ios")){
-            document.getElementById("browserMatching").innerHTML="android outside ios browser";
-        }
-    }
-    //browserInfoMatching();
-    location.href="./index.html";
+    self.close();
 
 </script>
 </body>
