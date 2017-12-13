@@ -1,3 +1,4 @@
+12/13   time: 1 working hour
 1.  采用不同设备采用transform scale方式的解决方案
 2.  transform 的rotate属性可以进行2d或3d的变换， translate可以进行位移变换，skew可以翻动变(待研究)， 其基点设置时transform-origin 是组件的中心
     默认是50%,50%  
