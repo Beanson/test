@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.static.runoob.com/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+    <!--Detail Content-->
+    <div contenteditable="true" test-select>
+        <span text-id="1" test-select-sub>11111</span><span text-id="2" test-select-sub>22222</span><span text-id="3" test-select-sub>33333</span>
+    </div>
+
+
+</div>
+<script>
+
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function ($scope, $http,DataSer) {
+
+        $scope.supportData=DataSer.supportData;
+
+
+    });
+
+    app.factory('DataSer',function () {
+        var supportData={
+            'start_text_index':'',
+            'end_text_index':'',
+            'start_text_offset':'',
+            'end_text_offset':''
+        };
+
+        return{
+            supportData:supportData,
+        }
+    });
+
+
+    app.directive('testSelect','DataSer',['$parse',function ($parse,DataSer) {
+        return{
+            restrict : 'A',
+            scope:{
+
+            },
+            link: function(scope, element, attrs) {
+
+                element.bind('mouseup', function(evt){
+                    scope.$apply(function(){
+                        var selectedRange = window.getSelection().getRangeAt(0);
+                        DataSer.supportData['start_text_offset']=selectedRange.startOffset;
+                        DataSer.supportData['end_text_offset']=selectedRange.startOffset;
+                    });
+                });
+            }
+        }
+    }]);
+
+    app.directive('testSelectSub','DataSer',['$parse',function ($parse,DataSer) {
+        return{
+            restrict : 'A',
+            scope:{
+                textId:'='
+            },
+            link: function(scope, element, attrs) {
+
+                element.bind('mousedown', function(evt){
+                    scope.$apply(function(){
+                        DataSer.supportData['start_text_index']=scope.textId;
+                    });
+                });
+                element.bind('mouseup', function(evt){
+                    scope.$apply(function(){
+                        DataSer.supportData['end_text_index']=scope.textId
+                    });
+                });
+            }
+        }
+    }])
+
+</script>
+</body>
+</html>
