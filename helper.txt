@@ -84,3 +84,77 @@
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Text tools selection-->
+    <div style="border: grey 1px;">
+
+        <!-- set color, font-weight and font-size -->
+        <div>
+
+            <div style="width: 16px;height: 16px;border-radius: 8px;background-color: pink;display: inline-block"></div>
+
+            <div style="display: inline-block">
+                <input type="text" value="15" style="width: 30px;height: 15px;"> px(size)
+            </div>
+
+            <div style="display: inline-block">
+                <input type="text" value="15" style="width: 30px;height: 15px;">px(weight)
+            </div>
+
+
+        </div>
+
+        <!-- set font-family, font style, font decoration-->
+        <div style="display: inline-block">
+
+
+            <select style="display: inline-block">
+                <option value="微软雅黑">微软雅黑</option>
+                <option value="Arial">Arial</option>
+                <option value="Adobe Caslon Pro Bold">Adobe Caslon Pro Bold</option>
+                <option value="Console">Console</option>
+                <option value="Comic Sans MS">Comic Sans MS</option>
+                <option value="fantasy">fantasy</option>
+                <option value="King">King</option>
+                <option value="sans-serif">sans-serif</option>
+                <option value="SimSun">SimSun</option>
+                <option value="Microsoft YaHei">Microsoft YaHei</option>
+                <option value="monospace">monospace</option>
+                <option value="Monotype Corsiva">Monotype Corsiva</option>
+                <option value="Times New Roman">Times New Roman</option>
+                <option value="宋体">宋体</option>
+                <option value="黑体">黑体</option>
+                <option value="华文行楷">华文行楷</option>
+            </select>
+
+            <select name="singleSelect" style="display: inline-block">
+                <option value="normal">normal</option>
+                <option value="italic">italic</option>
+                <option value="oblique">oblique</option>
+            </select>
+
+            <select style="display: inline-block">
+                <option value="none">none</option>
+                <option value="underline">underline</option>
+                <option value="overline">overline</option>
+                <option value="line-through">line-through</option>
+                <option value="blink">blink</option>
+            </select>
+
+        </div>
+    </div>
+
+
