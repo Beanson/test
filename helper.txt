@@ -1,3 +1,5 @@
+<select ng-model="overallData['fontFamily3']" ng-options="font.key as font.value for font in overallData['fonts']"></select>
+
 2018-3-27: overallDataSer,overallDirective,htmlEditor, 并测试下看是否可行
 
 
