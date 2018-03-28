@@ -1,3 +1,14 @@
+
+Node使用modules库时候动态引用方法
+var bastPath = "C:\\Program Files\\nodejs\\node_modules\\";
+global.include = function (file) {
+  var path = bastPath + file + '\\';
+  return require(path);
+};
+var express = include('express');
+
+
+
 <select ng-model="overallData['fontFamily3']" ng-options="font.key as font.value for font in overallData['fonts']"></select>
 
 2018-3-27: overallDataSer,overallDirective,htmlEditor, 并测试下看是否可行
