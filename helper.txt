@@ -1,4 +1,6 @@
 
+4/4: 微信登陆: https://www.cnblogs.com/txw1958/p/weixin-qrlogin.html
+
 
 3-29: 1. 购物车动画，2. 保存动画, 3.HTML加载后保存为一张图片, learn: 1. 带着目标去聊  2. angular动画, 设置frame, 扩大时候， 70%先大到1.2, 100%时为1.0，可以有弹出动画效果。 font awsome网站: http://fontawesome.dashgame.com/
 
