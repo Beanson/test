@@ -1,7 +1,28 @@
+4/9：
+database structure:
+User表增加 int total_usage_amount
+
+BackEnd
+后台接受请求后: 1.更新project表is_public为１, industry_code和industry_sub_code字段
+返回code给前端
+
+FrontEnd
+一.
+    前端接收返回后：　
+    返回正确200：关闭面板
+    1.如果is_public是1，则增加图标对应project的等待审核图标
+    2.如果is_public是0,则删除对应project图标
+
+    否则：弹出系统错误请稍候重试
+
+二.
+    前端project项目增加　a.审核标签 b.使用量标签 c.审核不通过标签
+
+
+
 4/6: 国际化，文本更改设置为config
 
 4/4: 微信登陆接入: https://www.cnblogs.com/txw1958/p/weixin-qrlogin.html
-
 
 3-29: 1. 购物车动画，2. 保存动画, 3.HTML加载后保存为一张图片, learn: 1. 带着目标去聊  2. angular动画, 设置frame, 扩大时候， 70%先大到1.2, 100%时为1.0，可以有弹出动画效果。 font awsome网站: http://fontawesome.dashgame.com/
 
