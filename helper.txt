@@ -1,7 +1,7 @@
 4/9：
 database structure:
 User表增加 int total_usage_amount
-
+  
 BackEnd
 后台接受请求后: 1.更新project表is_public为１, industry_code和industry_sub_code字段
 返回code给前端
