@@ -1,3 +1,6 @@
 forever start /root/arbitration/front/output/server/server.js
 
 nohup node /root/hsbc/questionnaire/front/output/server/server.js >/dev/null 2>&1 &
+
+
+nohup java -Dfile.encoding=UTF-8 -jar viewCoderBackendMaven.jar >/dev/null 2>&1 &
